@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicons/favicon-16x16.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Pokédex</title>
+  </head>
+  <body>
+
+    <!-- barra com a logo/"menu" -->
+    <header class="menu">
+      <img src="/images/Pokemon-Logo-.png" alt="Pokémon Logo"class="menu__logo"/>
+    </header>
+
+    <!-- Home, com botão que joga para a pokedex -->
+    <section class="home">
+      <div class="home__content">
+        <h1>Bem-vindo ao Mundo Pokémon!</h1>
+        <p>
+          Explore o universo dos Pokémon, descubra suas habilidades e torne-se
+          um mestre! Acesse nossa Pokédex para conhecer todos os Pokémon.
+        </p>
+        <a href="#pokedex" class="button">Acessar Pokédex</a>
+      </div>
+      <img src="/images/Pokemon-Transparent-Images.png" alt="Imagem Pokémon"class="home__image"/>
+    </section>
+
+    <!-- main, onde está a pokedex e toda a navegação com a API -->
+    <main>
+      <div id="pokedex" class="pokemon-info">
+        <img src="#" alt="pokemon" class="pokemon__image" />
+        <h1 class="pokemon__data">
+          <span class="pokemon__number"></span> -
+          <span class="pokemon__name"></span>
+        </h1>
+        <form class="form">
+          <input type="search" class="input__search" placeholder="Nome ou Número" required/>
+        </form>
+        <div class="buttons">
+          <a href="" class="button__lista">?</a>
+          <button class="button btn-prev">&lt;</button>
+          <button class="button btn-next">&gt;</button>
+          <a href="/lista.html" class="button__lista"><img src="/favicons/favicon-16x16.png" alt=""></a>
+        </div>
+      </div>
+      <img src="/images/pokedex.png" alt="pokedex" class="pokedex" />
+      <div class="pokemon-card">
+        <h2 class="card-title">Detalhes do Pokémon</h2>
+        <p><strong>Nome:</strong> <span class="card-name"></span></p>
+        <p><strong>Número:</strong> <span class="card-number"></span></p>
+        <p><strong>Tipo:</strong> <span class="card-type"></span></p>
+        <p><strong>Habilidades:</strong> <span class="card-abilities"></span></p>
+      </div>
+    </main>
+    <img src="/images/pokedex.png" alt="pokedex" class="pokedex" />
+
+    <!-- aréa de propaganda do jogo, com redirecionamento para instalação(jogo de infância) -->
+    <section class="jogo">
+      <img src="/images/Pokemon-PNG-Free-Download.png" alt="Imagem do Jogo" class="imagem-jogo">
+      <div class="home__jogo">
+        <h1>Entre no emocionante mundo de Pokémon!</h1>
+        <p>Agora que você já conferiu os diversos Pokémon na nossa Pokédex, realize o download do nosso jogo e entre nessa aventura!</p>
+        <a href="https://otpokemon.com/" class="button">Jogar Agora</a>
+      </div>
+    </section>
+    <script defer src="/js/script.js"></script>
+  </body>
+</html>
